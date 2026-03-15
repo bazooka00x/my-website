@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="/js/scripts.js"></script>
 </head>
 <body>
-    <div class="container"
-    <header>
+    <div class="container">
+     <header>
         <h1>The About Page</h1>
     </header>
     <section>
@@ -18,7 +19,7 @@
                 <input type="text" name="myName" id="myName" class="form-control">
             </div>
             <div class="mb-3">
-                <label for="myEmail" class="form-label">Email:</label>
+                <label id="emailBox" onmouseover="emailMessage()" onmouseout="blankMessage()" for="myEmail" class="form-label">Email:</label>
                 <input type="text" name="myEmail" id="myEmail" class="form-control">
             </div>
             Choose the browser you use:<br>
@@ -41,7 +42,7 @@
                     <label for="mailinglistyes" class="form-check-label">Yes</label>
                 </div> 
                 <div>
-                    <input type="radio" name="mailinglist" id="mailinglistno" value="yes" class="form-check-input">
+                    <input type="radio" name="mailinglist" id="mailinglistno" value="no" class="form-check-input">
                     <label for="mailinglistno" class="form-check-label">No</label>
                 </div>
             </div>
